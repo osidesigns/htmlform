@@ -5,7 +5,7 @@
 	 *Also checks if it is empty and sends the user back to the form.
 	*/
 
-	$firstName = null;
+	$firstName = $_GET['firstName'];
 
 	if(isset($firstName)){
 		echo "Hello, " . $firstName;
