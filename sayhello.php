@@ -7,10 +7,10 @@
 
 	$firstName = $_GET['firstName'];
 
-	if(isset($firstName)){
-		echo "Hello, " . $firstName;
-	}else{
+	if(!isset($firstName) || $firstName == null){
 		echo "HEY! Go back and put something in the Box! <br /> <a href='index.html'>Click Here To Do So.</a>";
+	}else{
+		echo "Hello, " . $firstName;
 	}
 
 
