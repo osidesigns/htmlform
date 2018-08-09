@@ -2,9 +2,112 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Simple Form</title>
+
+	<style type="text/css">
+
+		/*Header Area*/
+		#header{
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+
+		#header h1{
+			color: red;
+			font-size: 48px;
+		}
+
+		#header h1 span{
+			color: lightgreen;
+		}
+
+		/*Content Area*/
+		#content-area{
+			background-color: #efefef;
+			overflow: hidden;
+		}
+
+		#content-area div:nth-child(1){
+			width: 48%;
+			float: left;
+		}
+
+		#content-area div:nth-child(2){
+			width: 48%;
+			float: right;
+		}
+
+		#content-area p{
+			line-height: 1.6em;
+			font-size: 24px;
+		}
+
+		/*Sub Content*/
+		#sub-content ul{
+			list-style: none;
+			float: left;
+			padding: 0;
+		}
+
+		#sub-content li{
+			display: inline;
+			font-size: 20px;
+			margin-right: 10px;
+		}
+
+		#sub-content li a{
+			text-decoration: none;
+			color: orange;
+			text-transform: uppercase;
+		}
+
+		#footer-area{
+			clear: both;
+		}
+
+
+
+	</style>
+
+	<title>CSS Practice</title>
 </head>
 <body>
-	<form method="GET" action="sayhello.php"><input type="text" name="firstName"><input type="submit" value="Send"></form>
+	
+		<div id="header">
+			<h1>Ligma is <span>Spreading!</span></h1>
+			<cite>By: Ho Lynn  </cite>
+			<br />
+			<img src="https://i.kym-cdn.com/photos/images/newsfeed/001/394/576/8ac.jpg">
+		</div>
+
+		<div id="content-area">
+			<div>
+				<p id="first" class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eligendi molestiae officia consectetur ducimus voluptatum, sunt dolorum maiores beatae a, ipsa, illo quas repellendus libero illum doloribus soluta hic molestias autem praesentium!</p>
+			</div>
+
+			<div>
+				<p id="second" class="large">Ligma ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum, accusantium assumenda voluptate dolores necessitatibus esse aspernatur voluptatem ad, maiores beatae temporibus amet exercitationem neque. Cupiditate nesciunt suscipit voluptatem voluptates laudantium, dignissimos qui voluptatibus nobis.</p>
+			</div>
+		</div>
+
+		<div id="sub-content">
+			<ul>
+				<li><a href="#">Ligma Is Coming</a></li>
+				<li><a href="#">Ligma Is Coming</a></li>
+				<li><a href="#">Ligma Is Coming</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Ligma Is Coming</a></li>
+				<li><a href="#">Ligma Is Coming</a></li>
+				<li><a href="#">Ligma Is Coming</a></li>
+			</ul>
+		</div>
+		
+		
+		<div id="footer-area">
+			<hr />
+			<p>&copy; 2018 <u>Joshua Kurgat</u>.</p>
+		</div>
+	
 </body>
 </html>
